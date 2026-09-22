@@ -7,7 +7,6 @@ class FenetrePrincipale(QMainWindow):
         super().__init__()
 
         widget_central = QWidget()
-        # Cette fois-ci, on utilise un QGridLayout.
         disposition = QGridLayout()
         widget_central.setLayout(disposition)
         self.setCentralWidget(widget_central)
@@ -31,4 +30,5 @@ app = QApplication()
 fp = FenetrePrincipale()
 fp.show()
 app.exec()
+
 
