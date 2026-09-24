@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QLineEdit, QGridLayout, QWidget, QTextEdit
+from PySide6.QtWidgets import QApplication, QMainWindow, QLineEdit, QGridLayout, QWidget, QTextEdit, QPushButton
 
 
 class FenetrePrincipale(QMainWindow):
@@ -11,7 +11,7 @@ class FenetrePrincipale(QMainWindow):
         widget_central.setLayout(disposition)
         self.setCentralWidget(widget_central)
 
-        entree_base = QLineEdit()
+        entree_base = QPushButton("test")
         disposition.addWidget(entree_base, 0, 0)
 
         entree_mdp = QLineEdit()
